@@ -22,11 +22,16 @@ img {
     display: block;
     padding: 0;
     max-width: 100%;
+    margin: 4em auto;
 }
 
+.topimg {
+    max-width: 800px;
+
+}
 /*---- Styling Typography ----*/
 h1, blockquote {
-    color: #00ae0c;
+    color: #007414;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -45,7 +50,7 @@ h1 {
 h2 { 
     font-size: 1.75rem;
     margin: 3rem 0 1rem 0;
-    color: #00ae0c;
+    color: #E69000;
 }
 
 blockquote {
@@ -61,7 +66,7 @@ cite {
 }
 
 header h2 { 
-    color: #00ae0c;
+    color: #E69000;
     font-weight: 500;
     font-style: italic;
     font-family: 'Roboto Slab', serif;
@@ -79,7 +84,7 @@ header p {
     line-height: 55%;
     width: 2.8rem;
     font-size: 400%;
-    color: #00ae0c;
+    color: #E69000;
 
 }
 /*-- Styling links --*/
@@ -93,11 +98,28 @@ a:hover {
     color: #333;
 }
 
-.list li {
-    color: #333;
-    list-style: circle;
-    margin-bottom: 0.75rem;
-    margin-top: 0.75rem;
+.full-width-image {
+    width: 800px;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default image spacing */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Adjust the gap between grid items as needed */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.grid-item {
+    overflow: hidden; /* Ensure images don't overflow their container */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+.grid-item img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default image spacing */
 }
     
 
@@ -109,9 +131,9 @@ nav {
     left: 0;
     margin: 0;
     width: 100%;
-    background: #c10505;
+    background: #007414;
     padding: 2rem 0;
-    font-size: 1rem;    
+    font-size: 0.8rem;    
 }
 
 nav ul {
@@ -123,7 +145,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-    margin: 20px;
+    margin:20px;
 }
 
 nav a {
@@ -136,11 +158,13 @@ nav a:hover {
 }
 
 nav p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #f7f7f7;
 
 
 }
+
+
 .logo {
     font-size: 1.3rem;
     text-align: right;
@@ -148,11 +172,12 @@ nav p {
     font-family: 'Roboto Slab', serif;
 }
 
+/*-- STYLING FOOTER SECTION --*/
 footer {
-    background: #c10505;
+    background: #007414;
     text-align: center;
     font-size: 0.8;
-    color: #f7f7f7;
+    color: #333;
     padding: 4rem 0 3rem 0;
     margin-top: 4rem;
 }
@@ -192,7 +217,7 @@ footer .connections a:hover svg path {
         
         h1 { 
             font-size: 3rem;
-            color:#333;
+            color:#f7f7f7;
             font-weight: bold;
             margin: 2rem 0 1rem 0;
         }
@@ -200,7 +225,7 @@ footer .connections a:hover svg path {
         
         header h2 { 
             font-size: 1.75rem;
-            color: #00ae0c;
+            color: #E69000;
             font-weight: 500;
             font-style: italic;
             font-family: 'Roboto Slab', serif;
