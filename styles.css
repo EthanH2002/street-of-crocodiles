@@ -26,7 +26,8 @@ img {
 }
 
 .topimg {
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
 
 }
 /*---- Styling Typography ----*/
@@ -177,7 +178,7 @@ footer {
     background: #007414;
     text-align: center;
     font-size: 0.8;
-    color: #333;
+    color: #f7f7f7;
     padding: 4rem 0 3rem 0;
     margin-top: 4rem;
 }
